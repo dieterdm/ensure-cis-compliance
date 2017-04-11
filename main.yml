@@ -1,0 +1,8 @@
+- name: Run CIS compliance playbook on RHEL7 machine
+  hosts: "{{ vm_name }}"
+
+  roles:
+    - role: RHEL7-CIS
+      when:
+        - ansible_os_family == 'RedHat'
+        - ansible_distribution_major_version | version_compare('7', '=')
