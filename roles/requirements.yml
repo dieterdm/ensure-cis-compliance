@@ -1,0 +1,4 @@
+# from galaxy
+- src: mindpointgroup.rhel7-cis
+  version: "0.1.4"
+
